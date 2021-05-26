@@ -1,4 +1,4 @@
-%ifarch %{x8664} %{arm} aarch64 ppc64
+%ifarch %{x8664} armv7l armv7hl armv7hnl aarch64 ppc64
 %define		with_criu	1
 %endif
 
