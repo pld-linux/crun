@@ -30,7 +30,7 @@ BuildRequires:	systemd-devel
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 BuildRequires:	yajl-devel >= 2.0.0
-Requires:	criu-libs >= 3.15
+%{?with_criu:Requires:	criu-libs >= 3.15}
 Requires:	yajl >= 2.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
