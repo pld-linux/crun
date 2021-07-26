@@ -1,4 +1,4 @@
-%ifarch %{x8664} armv7l armv7hl armv7hnl aarch64 ppc64
+%ifarch %{x8664} %{armv7} %{armv8} aarch64 ppc64
 %define		with_criu	1
 %endif
 
@@ -26,6 +26,7 @@ BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRequires:	python3
 BuildRequires:	python3-devel
+BuildRequires:	rpmbuild(macros) >= 2.007
 BuildRequires:	systemd-devel
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
