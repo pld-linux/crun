@@ -17,7 +17,7 @@ Source0:	https://github.com/containers/crun/releases/download/%{version}/%{name}
 URL:		https://github.com/containers/crun
 BuildRequires:	autoconf >= 2.69
 BuildRequires:	automake >= 1:1.11.2
-%{?with_criu:BuildRequires:	criu-devel >= 3.15}
+%{?with_criu:BuildRequires:	criu-devel >= 3.16.1}
 %{?with_man:BuildRequires:	go-md2man}
 BuildRequires:	libcap-devel
 BuildRequires:	libseccomp-devel
@@ -31,7 +31,7 @@ BuildRequires:	systemd-devel
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 BuildRequires:	yajl-devel >= 2.0.0
-%{?with_criu:Requires:	criu-libs >= 3.15}
+%{?with_criu:Requires:	criu-libs >= 3.16.1}
 Requires:	yajl >= 2.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
