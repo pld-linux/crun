@@ -23,6 +23,7 @@ BuildRequires:	libcap-devel
 BuildRequires:	libseccomp-devel
 BuildRequires:	libselinux-devel
 BuildRequires:	libtool
+BuildRequires:	linux-libc-headers >= 7:3.18
 BuildRequires:	pkgconfig
 BuildRequires:	python3
 BuildRequires:	python3-devel
