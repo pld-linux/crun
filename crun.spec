@@ -8,12 +8,12 @@
 
 Summary:	OCI runtime written in C
 Name:		crun
-Version:	1.7
+Version:	1.7.2
 Release:	1
 License:	GPL v3+
 Group:		Applications/System
 Source0:	https://github.com/containers/crun/releases/download/%{version}/%{name}-%{version}.tar.xz
-# Source0-md5:	19b4d595f766a41e145d23dffbb8f143
+# Source0-md5:	7f1eb2b6d7bbabc4bb7c70b45bcf61cb
 URL:		https://github.com/containers/crun
 BuildRequires:	autoconf >= 2.69
 BuildRequires:	automake >= 1:1.11.2
@@ -33,8 +33,8 @@ BuildRequires:	systemd-devel
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 BuildRequires:	yajl-devel >= 2.0.0
-%{?with_criu:Requires:	criu-libs >= 3.16.1}
 Requires:	yajl >= 2.0.0
+%{?with_criu:Suggests:	criu-libs >= 3.16.1}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
