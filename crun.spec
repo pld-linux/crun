@@ -27,7 +27,7 @@ BuildRequires:	libtool
 BuildRequires:	linux-libc-headers >= 7:3.18
 BuildRequires:	pkgconfig
 BuildRequires:	python3
-BuildRequires:	python3-devel
+BuildRequires:	python3-modules
 BuildRequires:	rpmbuild(macros) >= 2.007
 BuildRequires:	systemd-devel
 BuildRequires:	tar >= 1:1.22
