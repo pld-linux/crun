@@ -8,19 +8,18 @@
 
 Summary:	OCI runtime written in C
 Name:		crun
-Version:	1.13
+Version:	1.14
 Release:	1
 License:	GPL v3+
 Group:		Applications/System
 Source0:	https://github.com/containers/crun/releases/download/%{version}/%{name}-%{version}.tar.xz
-# Source0-md5:	9290e9b55934cf2fbc9a015f33e112b7
+# Source0-md5:	0e2aa7dbcd78e5624a2d6fbd2c9856d4
 URL:		https://github.com/containers/crun
 BuildRequires:	autoconf >= 2.69
 BuildRequires:	automake >= 1:1.11.2
 %{?with_criu:BuildRequires:	criu-devel >= 3.16.1}
 %{?with_man:BuildRequires:	go-md2man}
 BuildRequires:	libcap-devel
-BuildRequires:	libgcrypt-devel
 BuildRequires:	libseccomp-devel
 BuildRequires:	libselinux-devel
 BuildRequires:	libtool
