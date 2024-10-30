@@ -8,12 +8,12 @@
 
 Summary:	OCI runtime written in C
 Name:		crun
-Version:	1.18
+Version:	1.18.1
 Release:	1
 License:	GPL v3+
 Group:		Applications/System
 Source0:	https://github.com/containers/crun/releases/download/%{version}/%{name}-%{version}.tar.zst
-# Source0-md5:	d9c2a698e463b7d3e0a4334249dfa7cb
+# Source0-md5:	77a1be98037ed9cf066833fd2a5227f2
 URL:		https://github.com/containers/crun
 BuildRequires:	autoconf >= 2.69
 BuildRequires:	automake >= 1:1.11.2
