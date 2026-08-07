@@ -31,7 +31,7 @@ BuildRequires:	python3
 BuildRequires:	python3-modules
 BuildRequires:	rpmbuild(macros) >= 2.007
 BuildRequires:	systemd-devel
-BuildRequires:	tar >= 1:1.22
+BuildRequires:	tar >= 1:1.31
 BuildRequires:	zstd
 Requires:	json-c >= 0.14
 %{?with_criu:Suggests:	criu-libs >= 3.16.1}
